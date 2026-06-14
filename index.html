@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="watch-shell" aria-label="Live watch">
+    <section class="watch">
+      <div class="bezel">
+        <div class="face" aria-hidden="true">
+          <span class="mark mark-12">12</span>
+          <span class="mark mark-3">3</span>
+          <span class="mark mark-6">6</span>
+          <span class="mark mark-9">9</span>
+          <div class="tick tick-1"></div>
+          <div class="tick tick-2"></div>
+          <div class="tick tick-4"></div>
+          <div class="tick tick-5"></div>
+          <div class="tick tick-7"></div>
+          <div class="tick tick-8"></div>
+          <div class="tick tick-10"></div>
+          <div class="tick tick-11"></div>
+          <div class="hand hour-hand" id="hourHand"></div>
+          <div class="hand minute-hand" id="minuteHand"></div>
+          <div class="hand second-hand" id="secondHand"></div>
+          <div class="pin"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" aria-live="polite">
+      <p class="label">Local Time</p>
+      <h1 id="digitalTime">00:00:00</h1>
+      <p id="dateText">Loading date</p>
+      <button class="mode-button" id="modeButton" type="button" aria-pressed="false">
+        <span class="mode-icon" aria-hidden="true"></span>
+        <span id="modeText">24-hour</span>
+      </button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
